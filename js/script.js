@@ -27,10 +27,15 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
 
+    //SCROLL TO OTHER LINKS
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    //CLOSE NAVIGATION
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
 ///////////////////////////////////////////////////////////
