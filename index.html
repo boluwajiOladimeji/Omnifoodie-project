@@ -20,7 +20,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script defer src="./js/script.js"></script>
 
     <title>Document</title>
@@ -33,11 +36,15 @@
         </a>
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">How it works</a></li>
-            <li><a class="main-nav-link" href="#">Meals</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+            <li><a class="main-nav-link" href="#how">How it works</a></li>
+            <li><a class="main-nav-link" href="#meals">Meals</a></li>
+            <li>
+              <a class="main-nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+            <li>
+              <a class="main-nav-link nav-cta" href="#cta">Try for free</a>
+            </li>
           </ul>
         </nav>
 
@@ -60,10 +67,10 @@
               nutritional needs.
             </p>
             <div class="btn-container">
-              <a href="#" class="btn btn--full margin-right-sm"
+              <a href="#cta" class="btn btn--full margin-right-sm"
                 >start eating well</a
               >
-              <a href="" class="btn btn--outline">learn more &darr;</a>
+              <a href="#how" class="btn btn--outline">learn more &darr;</a>
             </div>
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -144,7 +151,7 @@
       <!-- end of featured in -->
 
       <!-- how it works section -->
-      <section class="section section-how">
+      <section class="section section-how" id="how">
         <!-- section title -->
         <div class="section-center section-heading">
           <span class="subheading">How it works</span>
@@ -219,7 +226,7 @@
       </section>
 
       <!-- MEALS SECTION -->
-      <section class="section section-meals">
+      <section class="section section-meals" id="meals">
         <!-- section title -->
         <div class="section-center section-heading section-heading-2">
           <span class="subheading">Meals</span>
@@ -345,7 +352,7 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <!-- Section Title -->
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
@@ -504,7 +511,7 @@
       <!-- END OF TESTIMONIAL -->
 
       <!-- PRICING AND FEATURES SECTION -->
-      <section class="section section-pricing">
+      <section class="section section-pricing" id="pricing">
         <!-- section title -->
         <div class="section-center section-heading">
           <span class="subheading">Pricing</span>
@@ -633,7 +640,7 @@
 
       <!-- CALL TO ACTION -->
 
-      <section class="section section-cta">
+      <section id="cta" class="section section-cta">
         <div class="section-center">
           <div class="cta">
             <div class="cta-text-box">
