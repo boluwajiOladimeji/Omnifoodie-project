@@ -116,8 +116,11 @@
     margin-top: 0.75rem;
   }
 
+  /* MOBILE NAVIGATION */
+
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
