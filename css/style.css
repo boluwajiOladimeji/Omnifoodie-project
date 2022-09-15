@@ -12,6 +12,7 @@
   margin: 0 auto;
   justify-content: center;
   position: relative;
+  height: 80px;
   /* justify-items: center; */
 }
 
@@ -82,6 +83,23 @@
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.97);
+  z-index: 20;
+  height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 70px;
 }
 
 /***********************************/
